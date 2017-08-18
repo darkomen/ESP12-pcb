@@ -663,7 +663,7 @@ Wire Wire Line
 	8950 2850 8950 2750
 Connection ~ 8950 2750
 Text Notes 7500 2550 0    60   ~ 0
-Vo = 5v -> R10 = 1,8M\nVo = 3.3V -> R10 = 13M
+Vo = 5v -> R4 = 1,8M\nVo = 3.3V -> R4 = 13M
 Text Notes 5300 4400 0    60   ~ 0
 Low Battery Voltage = 3 v
 Wire Wire Line
@@ -826,5 +826,27 @@ F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9600 3150 50  0
 F 3 "" H 9600 3150 50  0001 C CNN
 	1    9600 3150
 	0    1    1    0   
+$EndComp
+$Comp
+L TEST GND1
+U 1 1 5996B10A
+P 7200 4950
+F 0 "GND1" H 7200 5250 50  0000 C BNN
+F 1 "TEST" H 7200 5200 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 7200 4950 50  0001 C CNN
+F 3 "" H 7200 4950 50  0001 C CNN
+	1    7200 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 5996B212
+P 7200 4950
+F 0 "#PWR029" H 7200 4700 50  0001 C CNN
+F 1 "GND" H 7200 4800 50  0000 C CNN
+F 2 "" H 7200 4950 50  0000 C CNN
+F 3 "" H 7200 4950 50  0000 C CNN
+	1    7200 4950
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
